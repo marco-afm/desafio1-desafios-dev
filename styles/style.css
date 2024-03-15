@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+    --cor-primaria: white;
+    --cor-secundaria: #4A4B46;
+    --cor-terciaria: #93B233;
+
+    --font-primaria: 'Open Sans', sans-serif;
+    --font-secundaria: 
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    font-family: var(--font-primaria);
+}
+
+/* <header> */
+.header {
+    background-color: var(--cor-terciaria);
+    height: 6px;
+}
+/* </header> */
+
+/* <main> */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 4% 4% 0% 4%;
+    gap: 25px;
+}
+.main__section1 {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    /* background-color: #d3d3d3; */
+    gap: 50px;
+    padding-left: 15%;
+}
+.main__section1__title {
+    color: var(--cor-secundaria);
+    font-weight: 400;
+    font-size: 2.45rem;
+}
+.main__section1__text {
+    font-weight: 700;
+    font-size: 1.5625rem;
+    color: var(--cor-terciaria);
+}
+.main__section2 {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    /* background-color: #d3d3d3; */
+    gap: 45px;
+    padding-right: 15%;
+    padding-bottom: 12%;
+}
+.main__section2__title {
+    color: var(--cor-secundaria);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.main__section2__subtitle {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--cor-terciaria);
+}
+.main__section2__text {
+    color: #666666;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+.main__section2__text__strong {
+    font-weight: bolder;
+    font-family: var(--font-primaria);
+}
+.main__section3 {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    /* background-color: #d3d3d3; */
+    gap: 50px;
+}
+.main__section3__title {
+    color: var(--cor-secundaria);
+    font-weight: bolder;
+    font-size: 1.30rem;
+}
+.main__section3__h1-strong {
+    color: var(--cor-terciaria);
+}
+/* </main> */
+
+/* <footer> */
+.footer {
+    color:  var(--cor-terciaria);
+    background-color: #25472E;
+    text-align: center;
+    font-family: var(--font-primaria);
+    font-weight: 600;
+    font-size: 20px;
+    padding: 30px;
+}
+.footer__pmenor {
+    font-size: 12px;
+    padding-top: 13px;    
+}
+/* </footer> */
+
+@media (max-width: 745px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0%;
+        margin: 15% 0% 0% 0%;
+    }
+    .main__section1 {
+        padding: 0%;
+        width: 75%;
+        align-items: center;
+    }
+    .main__section1__image1 {
+        width: 75%;
+    }
+    .main__section1__title {
+        font-weight: 300;
+        font-size: 1.5rem; 
+    }
+    .main__section1__text{
+        font-weight: 700;
+        font-size: 1.75rem;
+    }
+    .main__image2 {
+        width: 99%;
+    }
+    .main__image3 {
+        width: 99%;
+    }
+    .main__section2 {
+        display: flex;
+        flex-direction: column;
+        width: 77%;
+        gap: 45px;
+        padding: 0%;
+    }
+    .main__section2__title {
+        font-weight: 700;
+        font-size: 1.50rem;
+        text-align: left;   
+    }
+    .main__section2__subtitle {
+        font-weight: 600;
+        font-size: 1.50rem;
+        text-align: left;
+    }
+    .main__section2__text {
+        color: #666666;
+        font-weight: 200;
+        font-size: 1.1rem;
+        text-align: left;
+        padding: 0%;
+    }
+    .main__section3 {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        gap: 50px;
+        align-items: center;
+    }
+    .main__section3__title {
+        font-weight: bolder;
+        font-size: 1.50rem;
+        text-align: left;
+        padding-top: 25%;
+    }
+    .main__section3__image1 {
+        width: 125%;
+        padding: 0%;
+        margin: 0%;
+        padding-top: 5%;
+    }
+    .main__image3 {
+        width: 75%;
+    }
+}
